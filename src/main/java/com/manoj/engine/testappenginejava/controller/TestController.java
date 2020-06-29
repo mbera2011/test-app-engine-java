@@ -10,6 +10,6 @@ public class TestController {
 
   @GetMapping(value = "java", produces = "application/hal+json")
   public String testMethod(){
-    return "WellCome To App Engine With Java";
+    return "WellCome To App Engine With Java 8";
   }
 }

@@ -3,7 +3,7 @@ env: flex
 runtime_config:
   jdk: openjdk8
 handlers:
-  - url: /.*
+  - url: /java-app/.*
     script: this field is required, but ignored
 # Application Resources
 resources:
@@ -17,14 +17,14 @@ resources:
 
 # Automatic Scaling
 automatic_scaling:
-  min_num_instances: 2
+  min_num_instances: 1
   max_num_instances: 3
   cool_down_period_sec: 180
   cpu_utilization:
     target_utilization: 0.6
 
 readiness_check:
-  path: "/actuator/health"
+  path: "/java-app/actuator/health"
   check_interval_sec: 30
   timeout_sec: 2
   failure_threshold: 3

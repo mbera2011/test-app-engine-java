@@ -28,7 +28,7 @@ class TestAppEngineJavaApplicationTests {
 		MvcResult mvcResult=mockMvc.perform(get(
 			"/java").contentType(MediaType.APPLICATION_JSON))
 			.andExpect(status().is(200)).andReturn();
-		Assert.assertEquals("WellCome To App Engine With Java", mvcResult.getResponse().getContentAsString() );
+		Assert.assertEquals("WellCome To App Engine With Java 8", mvcResult.getResponse().getContentAsString() );
 	}
 
 }

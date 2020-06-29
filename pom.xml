@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.manoj.engine</groupId>
 	<artifactId>test-app-engine-java</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>test-app-engine-java</name>
 	<description>Demo project for App Engine</description>
 
