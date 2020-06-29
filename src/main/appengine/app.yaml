@@ -25,8 +25,8 @@ automatic_scaling:
 
 readiness_check:
   path: "/actuator/health"
-  check_interval_sec: 5
-  timeout_sec: 10
+  check_interval_sec: 30
+  timeout_sec: 2
   failure_threshold: 3
   success_threshold: 2
   app_start_timeout_sec: 300
