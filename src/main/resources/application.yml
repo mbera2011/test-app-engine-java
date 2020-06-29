@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: APPENGINE2JAVA-V1
+
+server:
+  servlet:
+    contextPath: /java-app
+  port: 8080
+
+endpoints:
+  actuator:
+    enabled: false
+    sensitive: false
+  autoconfig:
+    enabled: true
+  configprops:
+    enabled: true
+  beans:
+    enabled: true
+  loggers:
+    enabled: true
+  health:
+    enabled: true
+  dump:
+    enabled: true
+  heapdump:
+    enabled: true
+  info:
+    enabled: true
+  env:
+    enabled: true
+  metrics:
+    enabled: true
+  mappings:
+    enabled: true
+  shutdown:
+    enabled: false
+  trace:
+    enabled: true
+
+management:
+  security:
+    enabled: false
